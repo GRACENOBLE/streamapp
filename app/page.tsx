@@ -4,7 +4,7 @@ import MovieGrid from "@/components/MovieGrid";
 import Trending from "@/components/Trending";
 import React from "react";
 
-const page = () => {
+export default function page() {
   return (
     <main>
       <Header />
@@ -12,7 +12,6 @@ const page = () => {
       <Trending/>
       <MovieGrid/>
     </main>
-  );
-};
+  )
+}
 
-export default page;

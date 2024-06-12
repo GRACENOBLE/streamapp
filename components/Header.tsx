@@ -4,9 +4,9 @@ import React from "react";
 import { HiMagnifyingGlass } from "react-icons/hi2";
 import Container from "./Container";
 
-const Header = () => {
+export default function Header() {
   return (
-    <header className="flex h-20 items-center bg-gradient-to-t from-transparent to-black py-4 fixed w-full z-10">
+    <header className="flex h-60 bg-gradient-to-t from-transparent to-black py-4 fixed w-full z-10">
       <Container>
         <nav className="flex justify-between ">
           <div className=" h-10 flex items-center px-1">
@@ -30,10 +30,8 @@ const Header = () => {
         </nav>
       </Container>
     </header>
-  );
-};
-
-export default Header;
+  )
+}
 
 type NavLinkProps = { title: string; path: string };
 

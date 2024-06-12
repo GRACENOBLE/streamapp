@@ -1,8 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import Container from "./Container";
 
-const TrendingCard = () => {
+export default function TrendingCard() {
   return (
     <section className="">
       <Image
@@ -13,7 +12,5 @@ const TrendingCard = () => {
         className="rounded-md object-cover  w-full h-auto"
       />
     </section>
-  );
-};
-
-export default TrendingCard;
+  )
+}

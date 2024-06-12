@@ -2,9 +2,8 @@ import React from "react";
 import Container from "./Container";
 import Image from "next/image";
 
-const Hero = () => {
-  return (
-    <section className=" w-full h-[520px]  top-0 relative ">
+export default function Hero() {
+  return (<section className=" w-full h-[520px]  top-0 relative ">
       <div >
         <div className=" w-full h-full bg-gradient-to-t from-gray-900 via-gray-900/50 to-gray-900">
           <Container>
@@ -32,7 +31,6 @@ const Hero = () => {
         />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Hero;
